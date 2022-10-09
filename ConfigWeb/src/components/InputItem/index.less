@@ -1,0 +1,70 @@
+.item input:hover {
+  border: 1px #484848 dashed;
+}
+.item textarea:hover {
+  border: 1px #484848 dashed;
+}
+.item {
+  display: flex;
+  margin: 10px 0;
+  .deleteIcon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    span {
+      width: 15px;
+      margin: auto;
+    }
+  }
+  .textArea {
+    display: flex;
+    div {
+      display: flex;
+      * {
+        margin: auto;
+      }
+    }
+
+    textarea {
+      margin-left: 5px;
+      line-height: 28px;
+    }
+  }
+  :global {
+    .ant-input {
+      border: none;
+      resize: none;
+      word-break: break-all;
+      height: 36px;
+      line-height: 36px;
+    }
+    .ant-input:focus {
+      border: none !important;
+
+      background-color: yellow;
+    }
+    .ant-radio-wrapper {
+      width: 100%;
+      line-height: 36px;
+    }
+    .ant-radio-disabled .ant-radio-inner {
+      background-color: #fff;
+    }
+
+    .ant-checkbox + span {
+      display: inline-block;
+      width: 100%;
+    }
+    .ant-checkbox-wrapper {
+      width: 100%;
+      line-height: 36px;
+    }
+    .ant-checkbox-disabled .ant-checkbox-inner {
+      background-color: #fff;
+    }
+    .ant-radio + * {
+      width: 100%;
+      display: inline-block;
+    }
+  }
+}

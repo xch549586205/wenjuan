@@ -1,0 +1,34 @@
+.option {
+  .nps {
+    display: inline-block;
+    padding-bottom: 30px;
+    > div {
+      display: flex;
+      position: relative;
+      .row {
+        margin-right: 9px;
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+        border: 1px solid #d8d8d8;
+        cursor: pointer;
+        border-radius: 50%;
+        text-align: center;
+      }
+      .active {
+        background: #53a4f4;
+        color: #fff;
+      }
+      p {
+        position: absolute;
+        top: 40px;
+      }
+      .min {
+        left: 0;
+      }
+      .max {
+        right: 0;
+      }
+    }
+  }
+}
